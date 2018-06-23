@@ -39,6 +39,7 @@ body {
 }
 
 #header {
+	max-width: 1024px;
 	width: 100%;
 	height: auto;
 	text-align: center;
@@ -57,16 +58,8 @@ body {
 	color: white;
 }
 
-
-
-.navbar-nav {
-   float: left;
-   margin: 0;
-   margin-left: 40%;
-}
-
 .navbar-brand {
-  padding: 0 15px;
+  padding: 0px;
   height: 30px;
   line-height: 27px;
 }
@@ -85,6 +78,15 @@ body {
     line-height: 27px;
   }
 }
+
+#header li {
+	padding: 0 2vw;
+}
+
+#header li a {
+	padding: 0px;
+}
+
 
 /* End of Header */
 

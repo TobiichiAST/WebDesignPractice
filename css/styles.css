@@ -1,0 +1,114 @@
+/* CSS Stylesheet */
+
+/* Contents */
+
+	/* General Change:         line a; */
+	/* Header:                 line b; */
+	/* Content:                line c; */
+	/* Footer:                 line d; */
+
+/* End of Contents */
+
+
+
+/* General Change */
+
+h1 {
+	margin: 0px;
+}
+
+p {
+	margin: 0px;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+	line-height: 2.5em;
+	color: #000000;
+	margin: 0px;
+}
+
+/* End of General Change */
+
+
+
+/* Header */
+
+#header-wrapper {
+	background-color: green;
+}
+
+#header {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: yellow;
+	margin:0 auto;
+	padding: 0px;
+}
+
+.navbar {
+  min-height: 30px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+}
+
+
+
+.navbar-nav {
+   float: left;
+   margin: 0;
+   margin-left: 40%;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 30px;
+  line-height: 27px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 27px;
+  }
+}
+
+/* End of Header */
+
+
+
+/* Content */
+
+#content {
+	background-color: orange;
+}
+
+/* End of Content */
+
+
+
+/* Footer */
+
+footer {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	font-size: 40px;
+	background-color: yellow;
+}
+
+/* End of Footer */
+

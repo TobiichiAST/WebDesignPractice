@@ -1,14 +1,12 @@
-@media screen and (max-width: 760px){
-	.toshow h1 {
-		color: #000000;
-		text-shadow: 2px 2px #777777;
-		text-align: center;
+@media screen and (max-width: 767px){
+	.navbar-nav > li > a {
+		/* (80px - line-height of 27px) / 2 = 26.5px */
+		padding-top: 0px;
+		padding-bottom: 0px;
+		line-height: 27px;
 	}
-
-	.toshow p {
-		color: #000000;
-		text-shadow: none;
-		font-weight: 400;
+	.toshow h1 {
+		text-align: center;
 	}
 
 	.toshow {
@@ -20,7 +18,7 @@
 	}
 
 	.content_image_right {
-		height: 90vh;
+		height: 600px;
 		background-image: url("../images/background_1_small.jpg");
 		background-position: top; 
 	}

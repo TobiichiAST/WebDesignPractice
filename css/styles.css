@@ -28,6 +28,16 @@ body {
 	margin: 0px;
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 /* End of General Change */
 
 
@@ -35,7 +45,7 @@ body {
 /* Header */
 
 #header-wrapper {
-	background-color: green;
+	background-color: #343a40;
 }
 
 #header {
@@ -80,7 +90,9 @@ body {
 }
 
 #header li {
-	padding: 0 2vw;
+	padding: 0px;
+	width: 10vw;
+	max-width: 102px;
 }
 
 #header li a {
@@ -94,8 +106,35 @@ body {
 
 /* Content */
 
-#content {
-	background-color: orange;
+#content_image_right {
+	width: 100vw;
+	height: 680px;
+	max-width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../images/index-1.jpg");
+	background-position: bottom right; 
+}
+
+.toshow {
+	width: 50vw;
+	min-width: 500px;
+	padding-left: 10vw;
+	padding-top: 20vh;
+}
+
+.toshow h1 {
+	color: #FFFFFF;
+	font-weight: 500;
+	text-shadow: 2px 2px #777777;
+	opacity: 0;
+}
+
+.toshow p {
+	color: #FEFEFE;
+	font-weight: 300;
+	text-align: justify;
+	opacity: 0;
 }
 
 /* End of Content */

@@ -1,0 +1,26 @@
+@media screen and (max-width: 760px){
+	.toshow h1 {
+		color: #000000;
+		text-shadow: 2px 2px #777777;
+		text-align: center;
+	}
+
+	.toshow p {
+		color: #000000;
+		text-shadow: none;
+		font-weight: 400;
+	}
+
+	.toshow {
+		width: auto;
+		max-width: 80vw;
+		min-width: 0;
+		padding-left: 15vw;
+	}
+
+	.content_image_right {
+		height: 90vh;
+		background-image: url("../images/background_1_small.jpg");
+		background-position: top; 
+	}
+}

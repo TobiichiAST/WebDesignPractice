@@ -2,10 +2,10 @@
 
 /* Contents */
 
-	/* General Change:         line a; */
-	/* Header:                 line b; */
-	/* Content:                line c; */
-	/* Footer:                 line d; */
+	/* General Change:				 line a; */
+	/* Header:								 line b; */
+	/* Content:								line c; */
+	/* Footer:								 line d; */
 
 /* End of Contents */
 
@@ -29,13 +29,13 @@ body {
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+	-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+		 -khtml-user-select: none; /* Konqueror HTML */
+			 -moz-user-select: none; /* Firefox */
+				-ms-user-select: none; /* Internet Explorer/Edge */
+						user-select: none; /* Non-prefixed version, currently
+																	supported by Chrome and Opera */
 }
 
 /* End of General Change */
@@ -61,7 +61,7 @@ body {
 }
 
 .navbar {
-  min-height: 30px;
+	min-height: 30px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -69,24 +69,25 @@ body {
 }
 
 .navbar-brand {
-  padding: 0px;
-  height: 30px;
-  line-height: 27px;
+	padding: 0px;
+	padding-left: 50px;
+	height: 30px;
+	line-height: 27px;
 }
 
 .navbar-toggle {
-  /* (80px - button height 34px) / 2 = 23px */
-  margin-top: 23px;
-  padding: 9px 10px !important;
+	/* (80px - button height 34px) / 2 = 23px */
+	margin-top: 23px;
+	padding: 9px 10px !important;
 }
 
 @media (min-width: 768px) {
-  .navbar-nav > li > a {
-    /* (80px - line-height of 27px) / 2 = 26.5px */
-    padding-top: 0px;
-    padding-bottom: 0px;
-    line-height: 27px;
-  }
+	.navbar-nav > li > a {
+		/* (80px - line-height of 27px) / 2 = 26.5px */
+		padding-top: 0px;
+		padding-bottom: 0px;
+		line-height: 27px;
+	}
 }
 
 #header li {
@@ -106,13 +107,13 @@ body {
 
 /* Content */
 
-#content_image_right {
+.content_image_right {
 	width: 100vw;
 	height: 680px;
 	max-width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url("../images/index-1.jpg");
+	background-image: url("../images/background_1_modified.jpg");
 	background-position: bottom right; 
 }
 
@@ -132,6 +133,7 @@ body {
 
 .toshow p {
 	color: #FEFEFE;
+	text-shadow: 2px 2px #777777;
 	font-weight: 300;
 	text-align: justify;
 	opacity: 0;

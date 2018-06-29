@@ -1,0 +1,321 @@
+/* CSS Stylesheet */
+
+/* Contents */
+
+	/* General Change:				 line a; */
+	/* Header:								 line b; */
+	/* Content:								line c; */
+	/* Footer:								 line d; */
+
+/* End of Contents */
+
+
+
+/* General Change */
+
+h1 {
+	margin: 0px;
+}
+
+p {
+	margin: 0px;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+	line-height: 2.5em;
+	color: #000000;
+	margin: 0px;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+		 -khtml-user-select: none; /* Konqueror HTML */
+			 -moz-user-select: none; /* Firefox */
+				-ms-user-select: none; /* Internet Explorer/Edge */
+						user-select: none; /* Non-prefixed version, currently
+																	supported by Chrome and Opera */
+}
+
+/* End of General Change */
+
+
+
+/* Header */
+
+#header-wrapper {
+	background-color: #343a40;
+}
+
+#header {
+	max-width: 1024px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: yellow;
+	margin:0 auto;
+	padding: 0px;
+}
+
+.navbar {
+	min-height: 30px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-brand {
+	padding: 0px;
+	padding-left: 50px;
+	height: 30px;
+	line-height: 27px;
+}
+
+.navbar-toggle {
+	/* (80px - button height 34px) / 2 = 23px */
+	margin-top: 23px;
+	padding: 9px 10px !important;
+}
+
+#header li {
+	padding: 0px;
+	width: 10vw;
+	max-width: 102px;
+}
+
+#header li a {
+	padding: 0px;
+}
+
+
+/* End of Header */
+
+
+
+/* Content */
+
+.content_image_right {
+	width: 100vw;
+	height: 680px;
+	max-width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../images/background_1_modified.jpg");
+	background-position: bottom right; 
+}
+
+.toshow {
+	width: 50vw;
+	min-width: 500px;
+	padding-left: 10vw;
+	padding-top: 20vh;
+}
+
+.toshow h1 {
+	color: #FFFFFF;
+	font-size: 55px;
+	font-weight: 500;
+	text-shadow: 4px 4px #777777;
+	opacity: 0;
+}
+
+.toshow p {
+	color: #FEFEFE;
+	text-shadow: 2px 2px #777777;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: justify;
+	opacity: 0;
+}
+
+.row {
+	max-width: 1024px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.fruitimg {
+	max-width: 100%;
+}
+
+.row {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.row-wrapper {
+	background-color: #f7f7f7;
+}
+/* End of Content */
+
+
+
+/* Footer */
+
+footer {
+	width: 100%;
+	height: 40px;
+	background-color: #d8d9db;
+}
+
+.footer_wrapper {
+	max-width: 1024px;
+	width: 100%;
+	margin: 0px auto;
+}
+
+footer p {
+	color: #7c7d80;
+	font-size: 10px;
+}
+
+#copy_right {
+	padding-left: 20px;
+	float: left;
+}
+
+#footer_language {
+	padding-right: 20px;
+	float:right;
+}
+
+/* End of Footer */
+
+
+
+
+/* Test */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: #000000;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+
+    border: 3px solid #3498db;
+    z-index: 101;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid #e74c3c;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 3px solid #f9c922;
+}
+
+/* change border to transparent and set only border-top to a solid color */
+#loader {
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+}
+#loader:before {
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+}
+#loader:after {
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+}
+
+#loader {
+    border-radius: 50%;
+}
+#loader:before {
+    border-radius: 50%;
+}
+#loader:after {
+    border-radius: 50%;
+}
+
+
+/* copy and paste the animation inside all 3 elements */
+/* #loader, #loader:before, #loader:after */
+-webkit-animation: spin 1.5s linear infinite;
+animation: spin 1.5s linear infinite;
+ 
+/* include this only once */
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@keyframes fadeOut {
+   0% {opacity: 1;}
+   100% {opacity: 0;} 
+} 
+
+
+#loader {
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+/* Loaded */
+
+.loaded #loader {
+    opacity: 0;
+}
+
+.loaded #loader-wrapper {
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-out; 
+            transition: all 0.5s ease-out;
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-out; 
+            transition: all 0.5s ease-out;
+}

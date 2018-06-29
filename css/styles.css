@@ -132,6 +132,25 @@ body {
 	opacity: 0;
 }
 
+.row {
+	max-width: 1024px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.fruitimg {
+	max-width: 100%;
+}
+
+.row {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.row-wrapper {
+	background-color: #f7f7f7;
+}
 /* End of Content */
 
 
@@ -140,6 +159,7 @@ body {
 
 footer {
 	width: 100%;
+	height: 40px;
 	background-color: #d8d9db;
 }
 

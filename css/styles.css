@@ -132,24 +132,53 @@ body {
 	opacity: 0;
 }
 
+.row-wrapper {
+	text-align: center;
+}
+
+.row-wrapper h1 {
+	padding-top: 100px;
+	max-width: 100%;
+}
+
+.row-wrapper p {
+	
+}
+
 .row {
 	max-width: 1024px;
 	width: 100%;
 	height: auto;
 	text-align: center;
-}
-
-.fruitimg {
-	max-width: 100%;
-}
-
-.row {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
 
+.fruitimg {
+	max-width: 100%;
+	max-height: 200px;
+
+}
+
 .row-wrapper {
-	background-color: #f7f7f7;
+	/* background-color: #f7f7f7; */
+}
+
+.row h1 {
+	padding-top: 20px;
+	font-size: 30px;
+}
+
+.row p {
+	font-size: 15px;
+	line-height: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.row-background {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 /* End of Content */
 

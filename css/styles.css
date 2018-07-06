@@ -348,3 +348,97 @@ animation: spin 1.5s linear infinite;
     -webkit-transition: all 0.5s ease-out; 
             transition: all 0.5s ease-out;
 }
+
+
+/* Own Narbar Test */
+#own-navbar-wrapper{
+	text-align: center;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #F78C52;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  -webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+  width:100px;
+  text-align: center;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav-bg {
+	background-color: #F78C52;
+	height:68px;
+}
+
+.topnav-background-transform{
+	-webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+	
+}
+
+.topnav-background-transform-active{
+	height:100vh;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+  	width: 100%;
+    float: none;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .topnav a {
+  	display: block !important;
+  }
+  #topnav-button {
+  	display: none !important;
+  }
+  .topnav-background-transform-active{
+	height:68px;
+}
+}
+

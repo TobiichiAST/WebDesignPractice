@@ -45,7 +45,11 @@ body {
 /* Header */
 
 #header-wrapper {
+	position: fixed;
+	overflow: hidden;
 	background-color: #343a40;
+	width: 100vw;
+	z-index: 99999;
 }
 
 #header {
@@ -100,12 +104,16 @@ body {
 
 .content_image_right {
 	width: 100vw;
-	height: 680px;
+	height: calc(680px + 128px);
 	max-width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url("../images/background_1_modified.jpg");
 	background-position: bottom right; 
+}
+
+#first_page {
+	height: 128px;
 }
 
 .toshow {
